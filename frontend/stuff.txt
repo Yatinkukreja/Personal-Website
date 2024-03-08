@@ -1,0 +1,31 @@
+VSCode Inspired Color Palette
+Background Color (Main Area): #1E1E1E
+
+This dark gray serves as the primary background color for most of the IDE's interface, providing a comfortable contrast for text and other elements.
+Sidebar/Panel Background Color: #252526
+
+A slightly lighter shade of dark gray that can be used for sidebars or panel backgrounds, helping to differentiate sections of the layout.
+Header/Footer Color: #007ACC
+
+This vibrant blue can highlight the header or footer sections, reminiscent of the accent color used throughout the VSCode UI.
+Primary Text Color: #CCCCCC
+
+A light gray color that ensures good readability against the dark background colors mentioned above.
+Secondary Text Color (Comments, Descriptions): #6A9955
+
+A muted green, often used for comments in code, which can serve as a secondary text color for less prominent information or descriptions.
+Accent Color (Links, Buttons, Highlights): #569CD6
+
+A slightly muted blue compared to the header/footer color, ideal for links, button text, or other UI elements you wish to highlight.
+Selection Background Color: #264F78
+
+This color can be used for background highlights when selecting text or focusing on interactive elements, offering a subtle contrast without overpowering the primary content.
+Error/Warning Color: #D16969
+
+A soft red useful for error messages, warnings, or important action buttons, drawing attention without being too harsh on the eyes.
+Keyword/Function Color: #C586C0
+
+A light purple that can be used for special text such as keywords in code snippets, titles, or headings to distinguish them from regular text.
+Variable/Tag Color: #9CDCFE
+
+A light, airy blue, great for representing variables, tags, or any dynamic elements within text content or code snippets.

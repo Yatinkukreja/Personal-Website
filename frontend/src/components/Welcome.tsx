@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
 const Welcome: FC = () => (
-    <div className="App bg-[#1e1e1e] text-[#cccccc] min-h-screen w-full flex flex-col">
+    <div className="App bg-[#1e1e1e] text-[#cccccc] min-h-screen w-full flex flex-col overflow-auto">
         <div className='whitespace-pre-wrap text-left font-mono ml-5 pt-5' style={{ whiteSpace: 'pre-wrap', textAlign: 'left', fontFamily: '"Courier New", Courier, monospace', marginLeft: '20px' }}>
             <TypeAnimation 
               sequence={[
