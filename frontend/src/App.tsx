@@ -15,6 +15,7 @@ import Welcome from './components/Welcome';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Hobbies from './components/Hobbies';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 function App() {
 
@@ -25,13 +26,16 @@ function App() {
     sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const useEffect = () => {
-
-  };
+  const theme = createTheme({
+    typography: {
+      fontFamily: '"Courier New", Courier, monospace',
+    },
+  });
 
   return (
     <BrowserRouter>
-    <div className="h-screen" >
+    <ThemeProvider theme={theme} >
+    <div className="h-screen bg-[#1e1e1e]" >
       <Header />
      <Routes>
               <Route path="/" Component={Welcome}/>
@@ -40,6 +44,7 @@ function App() {
               <Route path="/Hobbies" Component={Hobbies} />
      </Routes>
      </div>
+     </ThemeProvider>
     </BrowserRouter>
   );
 }

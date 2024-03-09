@@ -29,3 +29,39 @@ A light purple that can be used for special text such as keywords in code snippe
 Variable/Tag Color: #9CDCFE
 
 A light, airy blue, great for representing variables, tags, or any dynamic elements within text content or code snippets.
+
+
+
+
+
+
+Given your theme and the innovative approaches you've already implemented, creating additional features that fit within your VSCode dark mode-inspired aesthetic can further enhance your website's uniqueness and professional appeal. Here are several ideas to consider for your skills page, hobbies page, contact information, and other integrations:
+
+### 1. Skills Page:
+- **Code Snippet Theme**: Present your skills as if they're part of a programming language. For instance, categorize them like `Languages`, `Frameworks`, `Tools`, etc., and use syntax highlighting as if you're declaring variables or creating functions. Example:
+  ```javascript
+  const skills = {
+    languages: ['JavaScript', 'Python', 'C#'],
+    frameworks: ['React', 'Node.js', 'Django'],
+    tools: ['Git', 'Docker', 'Jenkins']
+  };
+  ```
+- **Interactive Console**: Implement an interactive console where visitors can 'run' predefined commands to list your skills, similar to a CLI experience. This keeps the coding theme consistent and engages the visitor.
+
+### 2. Hobbies Page:
+- **Project-like Descriptions**: Treat your hobbies as projects, presenting them with commit messages that describe your achievements or milestones within each hobby.
+- **Interactive Gallery**: Use a carousel or grid layout that resembles a version control system's repository structure, where each hobby is a "repo" with "files" and "commits" detailing your experiences or projects related to the hobby.
+
+### 3. Contact Information:
+- **Footer or Sidebar**: Design this section like a status bar in VSCode, including icons that, when hovered or clicked, reveal your GitHub, LinkedIn, resume, and contact methods.
+- **Modal or Pop-up Command Palette**: Similar to VSCode's command palette, you can have an interactive element where users can type in commands (e.g., `> Open Contact Info`) to open a modal with your contact details and links.
+
+### 4. Adding GitHub/LinkedIn/Resume:
+- **Icons with Tooltips**: Use the VSCode theme to style icons representing GitHub, LinkedIn, and your resume. On hover, display tooltips with a brief description or the direct link.
+- **Embed Gists for Resume**: If you want to include your resume directly on your site, consider formatting it as a code snippet or GitHub Gist. This can be an engaging way to present your professional timeline.
+
+### 5. Ways to Contact You:
+- **Issue Tracker Form**: Design your contact form to look like an issue tracker, where visitors can submit "issues" or messages to you. This can include fields like `Title`, `Description`, and `Labels` (e.g., Inquiry, Feedback).
+- **Live Code Collaboration Call to Action**: Encourage visitors to contact you for a live code session, akin to pair programming. This unique approach can not only show your openness to collaboration but also your skills in action.
+
+Remember, the key to a professional and unique website lies not only in its visual appeal but also in its functionality and user experience. Ensure that your site is accessible, responsive, and easy to navigate, all while maintaining your creative theme. By integrating these ideas thoughtfully, your website will not only showcase your technical skills but also your creativity and attention to detail, making you stand out to potential employers or collaborators.

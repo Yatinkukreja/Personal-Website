@@ -1,95 +1,147 @@
-import React, { FC } from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
+import MuiAccordion, { AccordionProps } from '@mui/material/Accordion';
+import MuiAccordionSummary, {
+  AccordionSummaryProps,
+} from '@mui/material/AccordionSummary';
+import MuiAccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
 
-interface HighLightProps {
-  text: string,
-};
+const Accordion = styled((props: AccordionProps) => (
+  <MuiAccordion disableGutters elevation={0} square {...props} />
+))(({ theme }) => ({
+  backgroundColor: "#1e1e1e",
+  color: "#cccccc",
+  fontFamily: '"Courier New", Courier, monospace',
+  // border: `1px solid ${theme.palette.divider}`,
+  // '&:not(:last-child)': {
+  //   borderBottom: 0,
+  // },
+  '&::before': {
+    display: 'none',
+  },
+}));
 
-const blueVar: FC<HighLightProps> = ({text}) => {
-  return(
-    <span className="text-[#9CDCFE] font-bold">{text}</span>
-  )
-};
+const AccordionSummary = styled((props: AccordionSummaryProps) => (
+  <MuiAccordionSummary
+    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color: "#cccccc", marginY: "0px" }} />}
+    {...props}
+  />
+))(({ theme }) => ({
+  // backgroundColor:
+  //   theme.palette.mode === 'dark'
+  //     ? 'rgba(255, 255, 255, .05)'
+  //     : 'rgba(0, 0, 0, .03)',
+  fontFamily: '"Courier New", Courier, monospace',
+  backgroundColor: "#1e1e1e",
+  color: "#cccccc",
+  flexDirection: 'row-reverse',
+  '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
+    transform: 'rotate(90deg)',
+  },
+  '& .MuiAccordionSummary-content': {
+    marginLeft: theme.spacing(1),
+    // margin: '0px 0',
+  },
+}));
 
-interface ProjectProps {
-    title: string,
-    date: string,
-    description: React.ReactNode,
-};
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  // padding: theme.spacing(2),
+  fontFamily: '"Courier New", Courier, monospace',
+}));
 
-const Project: FC<ProjectProps> = ({title, date, description}) => {
-    return(
-      <Accordion
-      defaultExpanded
-      sx={{
-        background: "#1e1e1e",
-        boxShadow: "none",
-        "&:before": {
-          display: "none",
-        },
-        "&.Mui-expanded": {
-          margin: 0,
-        },
-        marginY: 4,
-        fontFamily: '"Courier New", Courier, monospace', // Ensure monospace font
-      }}
-    >
-      <AccordionSummary
-        expandIcon={<ExpandMoreIcon />}
-        aria-controls="panel1-content"
-        id="panel1-header"
-        sx={{
-          minHeight: '0px',
-          '&.Mui-expanded': {
-            minHeight: '0px',
-          },
-          '.MuiAccordionSummary-content': {
-            margin: '0px',
-            '&.Mui-expanded': {
-              margin: '0px',
-            },
-            color: "#d4d4d4", // VSCode text color
-            fontWeight: 'bold', // Make the title stand out a bit
-          },
-        }}
-      >
-        {title} {"("}{date}{") "} {"{"}
-      </AccordionSummary>
-      <AccordionDetails
-        sx={{
-          paddingLeft: "1rem",
-          paddingBottom: "0px !important",
-          color: "#d4d4d4", // Ensure text color matches VSCode's
-          fontFamily: '"Courier New", Courier, monospace', // Consistent font
-          // You might add syntax highlighting here
-        }}
-      >
-        {description} <br/>{"}"}
+const Projects: React.FC = () => {
+  return (
+    <div className="bg-[#1e1e1e] text-[#cccccc] w-full flex flex-col overflow-auto">
+      <Accordion defaultExpanded>
+        <AccordionSummary>
+          Projects {"{"}
+        </AccordionSummary>
+        <AccordionDetails>
+      
+        <Typography className="text-[#6A9955] pl-10" style={{fontFamily: '"Courier New", Courier, monospace'}}>
+            <br/>{"/*"}<br/>
+            Completed: In Progress
+            <br/>{"*/"}
+      </Typography>
+      <Accordion defaultExpanded>
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+          <Typography><span className="text-[#dcdcaa] font-bold">Self Driving Car Simulator</span>{"("}
+          <span className="text-[#9CDCFE]">Javascript</span>, 
+          <span className="text-[#9CDCFE]"> Html</span>, 
+          <span className="text-[#9CDCFE]"> CSS</span>
+          {")"}{"{"}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="px-10">
+          Developed a no code, drag and drop education platform to teach students 
+          of any technical background the foundational concepts of Machine Learning.
+          Won Best Developer Tool and 2nd place in Best Use of Intel Developer Cloud
+          at Stanford TreeHacks {"'"}24. 
+          </Typography>
+          {"}"}
+        </AccordionDetails>
+      </Accordion>
+
+      <Typography className="text-[#6A9955] pl-10" style={{fontFamily: '"Courier New", Courier, monospace'}}>
+            <br/>{"/*"}<br/>
+            Collaborators: Dylan Paulson, Matt Lee, Max Weinreb
+            <br/>
+            Completed: February 2024, Stanford TreeHacks
+            <br/>{"*/"}
+      </Typography>
+      <Accordion defaultExpanded>
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+          <Typography><span className="text-[#dcdcaa] font-bold">ScratchML</span>{"("}
+          <span className="text-[#9CDCFE]">React</span>, 
+          <span className="text-[#9CDCFE]"> TypeScript</span>, 
+          <span className="text-[#9CDCFE]"> Python</span>, 
+          <span className="text-[#9CDCFE]"> Flask</span>, 
+          <span className="text-[#9CDCFE]"> Scikit-Learn</span>, 
+          <span className="text-[#9CDCFE]"> PyTorch</span>, 
+          <span className="text-[#9CDCFE]"> Prediction Gaurd LLM</span>
+          {")"}{"{"}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="px-10">
+          Developed a no code, drag and drop education platform to teach students 
+          of any technical background the foundational concepts of Machine Learning.
+          Won Best Developer Tool and 2nd place in Best Use of Intel Developer Cloud
+          at Stanford TreeHacks {"'"}24. 
+          </Typography>
+          {"}"}
+        </AccordionDetails>
+      </Accordion>
+      
+      <Typography className="text-[#6A9955] pl-10" style={{fontFamily: '"Courier New", Courier, monospace'}}>
+            <br/>{"/*"}
+            <br/>
+            Completed: January 2022, Purdue Hello World Hackathon
+            <br/>{"*/"}
+      </Typography>
+      <Accordion defaultExpanded>
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+          <Typography><span className="text-[#dcdcaa] font-bold">Campus Live Map</span>{"("}
+          <span className="text-[#9CDCFE]">Java</span>, 
+          <span className="text-[#9CDCFE]"> Java.Swing</span>, 
+          <span className="text-[#9CDCFE]"> Java.Awt</span>
+          {")"}{"{"}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className="px-10">
+          Built a live updating map of campus that details club events, special speakers, 
+          or hiring events for students to use.
+          </Typography>
+          {"}"}
+        </AccordionDetails>
+      </Accordion>
       </AccordionDetails>
-    </Accordion>
-    )
-};
-
-const Projects: FC = () => (
-    <div className="bg-[#1e1e1e] text-[#cccccc] min-h-screen w-full flex flex-col"
-        style={{fontFamily: '"Courier New", Courier, monospace'}}>
-        <Project title={"ScratchML"} date={"February 2024"} description={
-          <span>
-          Inspired by MIT Scratch's drag and drop Ui, 
-          my friends <span className="text-[#C586C0] font-bold">Max Weinreb</span>, <span className="text-[#C586C0] font-bold">Dylan Paulson</span>, <span className="text-[#C586C0] font-bold">Matt Lee</span> and I developed 
-          a no code, drag and drop education platform to teach students 
-          of any technical background the foundational concepts of Machine Learning. 
-          Built with <span className="text-[#9CDCFE] font-bold">React</span> and <span className="text-[#9CDCFE] font-bold">Typescript</span> on the front end and <span className="text-[#9CDCFE] font-bold">Python Flask</span> on the backend,
-          using the <span className="text-[#9CDCFE] font-bold">Scikit-Learn</span> and <span className="text-[#9CDCFE] font-bold">PyTorch</span> libraries, and a <span className="text-[#9CDCFE] font-bold">Firebase</span> database.
-          </span>
-          }/>
-        <Project title={"Live Campus Map"} date={"January 2022"} description={"Made a live updating map of campus that details club events, special speakers, or hiring events for students to use. Used Java, taking advantage of Swing and Awt libraries."}/>
+      <br/>
+      {"}"}
+      </Accordion>
     </div>
-);
+  );
+}
 
 export default Projects;

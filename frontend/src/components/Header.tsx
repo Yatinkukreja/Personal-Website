@@ -10,7 +10,7 @@ const Header: FC = () => {
     };
   
     return(
-        <div className="flex justify-between px-8 py-4 sticky top-0 bg-opacity-80 backdrop-blur-sm"
+        <div className="flex justify-between px-8 py-4 sticky top-0 bg-opacity-80 backdrop-blur-sm z-50"
         style={{fontFamily: '"Courier New", Courier, monospace', backgroundColor: "#007ACC", color: "#9CDCFE"}}>
             <div className="space-x-4 flex items-end">
                 <Link to="/">
