@@ -53,92 +53,95 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const Projects: React.FC = () => {
   return (
-    <div className="bg-[#1e1e1e] text-[#cccccc] w-full flex flex-col overflow-auto">
+    <div className="bg-[#1e1e1e] text-[#cccccc] w-full flex flex-col overflow-auto p-8">
+      <Typography className="text-[#6A9955] pl-10">
+        {"/*"}<br/>
+        Some projects I've worked on over the years! Some of these were just done in my spare time, some were done at 
+        hackathons. Some were done with my friends, and others were solo. 
+        <br/>{"*/"}
+        <br/>
+      </Typography>
       <Accordion defaultExpanded>
         <AccordionSummary>
           Projects {"{"}
         </AccordionSummary>
         <AccordionDetails>
-      
-        <Typography className="text-[#6A9955] pl-10" style={{fontFamily: '"Courier New", Courier, monospace'}}>
-            <br/>{"/*"}<br/>
+          <Typography className="text-[#6A9955] pl-10" style={{ fontFamily: '"Courier New", Courier, monospace' }}>
+            {"/*"}<br />
             Completed: In Progress
-            <br/>{"*/"}
-      </Typography>
-      <Accordion defaultExpanded>
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography><span className="text-[#dcdcaa] font-bold">Self Driving Car Simulator</span>{"("}
-          <span className="text-[#9CDCFE]">Javascript</span>, 
-          <span className="text-[#9CDCFE]"> Html</span>, 
-          <span className="text-[#9CDCFE]"> CSS</span>
-          {")"}{"{"}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="px-10">
-          Developed a no code, drag and drop education platform to teach students 
-          of any technical background the foundational concepts of Machine Learning.
-          Won Best Developer Tool and 2nd place in Best Use of Intel Developer Cloud
-          at Stanford TreeHacks {"'"}24. 
+            <br />{"*/"}
           </Typography>
-          {"}"}
-        </AccordionDetails>
-      </Accordion>
+          <Accordion defaultExpanded >
+            <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+              <Typography><span className="text-[#dcdcaa] font-bold">Self Driving Car Simulator</span>{"("}
+                <span className="text-[#9CDCFE]">Javascript</span>,
+                <span className="text-[#9CDCFE]"> Html</span>,
+                <span className="text-[#9CDCFE]"> CSS</span>
+                {")"}{"{"}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className="px-10">
+                Working on a Self Driving Car Simulator. The car uses a small neural network to steer itself and avoid
+                other cars and the edge of the road. A basic genetic algorithm is used to allow the network to learn.
+              </Typography>
+              {"}"}
+            </AccordionDetails>
+          </Accordion>
 
-      <Typography className="text-[#6A9955] pl-10" style={{fontFamily: '"Courier New", Courier, monospace'}}>
-            <br/>{"/*"}<br/>
+          <Typography className="text-[#6A9955] pl-10" style={{ fontFamily: '"Courier New", Courier, monospace' }}>
+            {"/*"}<br />
             Collaborators: Dylan Paulson, Matt Lee, Max Weinreb
-            <br/>
+            <br />
             Completed: February 2024, Stanford TreeHacks
-            <br/>{"*/"}
-      </Typography>
-      <Accordion defaultExpanded>
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography><span className="text-[#dcdcaa] font-bold">ScratchML</span>{"("}
-          <span className="text-[#9CDCFE]">React</span>, 
-          <span className="text-[#9CDCFE]"> TypeScript</span>, 
-          <span className="text-[#9CDCFE]"> Python</span>, 
-          <span className="text-[#9CDCFE]"> Flask</span>, 
-          <span className="text-[#9CDCFE]"> Scikit-Learn</span>, 
-          <span className="text-[#9CDCFE]"> PyTorch</span>, 
-          <span className="text-[#9CDCFE]"> Prediction Gaurd LLM</span>
-          {")"}{"{"}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="px-10">
-          Developed a no code, drag and drop education platform to teach students 
-          of any technical background the foundational concepts of Machine Learning.
-          Won Best Developer Tool and 2nd place in Best Use of Intel Developer Cloud
-          at Stanford TreeHacks {"'"}24. 
+            <br />{"*/"}
           </Typography>
-          {"}"}
-        </AccordionDetails>
-      </Accordion>
-      
-      <Typography className="text-[#6A9955] pl-10" style={{fontFamily: '"Courier New", Courier, monospace'}}>
-            <br/>{"/*"}
-            <br/>
+          <Accordion defaultExpanded>
+            <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+              <Typography><span className="text-[#dcdcaa] font-bold">ScratchML</span>{"("}
+                <span className="text-[#9CDCFE]">React</span>,
+                <span className="text-[#9CDCFE]"> TypeScript</span>,
+                <span className="text-[#9CDCFE]"> Python</span>,
+                <span className="text-[#9CDCFE]"> Flask</span>,
+                <span className="text-[#9CDCFE]"> Scikit-Learn</span>,
+                <span className="text-[#9CDCFE]"> PyTorch</span>,
+                <span className="text-[#9CDCFE]"> Prediction Gaurd LLM</span>
+                {")"}{"{"}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className="px-10">
+                Developed a no code, drag and drop education platform to teach students
+                of any technical background the foundational concepts of Machine Learning.
+                Won Best Developer Tool and 2nd place in Best Use of Intel Developer Cloud
+                at Stanford TreeHacks {"'"}24.
+              </Typography>
+              {"}"}
+            </AccordionDetails>
+          </Accordion>
+
+          <Typography className="text-[#6A9955] pl-10" style={{ fontFamily: '"Courier New", Courier, monospace' }}>
+            {"/*"}<br />
             Completed: January 2022, Purdue Hello World Hackathon
-            <br/>{"*/"}
-      </Typography>
-      <Accordion defaultExpanded>
-        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography><span className="text-[#dcdcaa] font-bold">Campus Live Map</span>{"("}
-          <span className="text-[#9CDCFE]">Java</span>, 
-          <span className="text-[#9CDCFE]"> Java.Swing</span>, 
-          <span className="text-[#9CDCFE]"> Java.Awt</span>
-          {")"}{"{"}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className="px-10">
-          Built a live updating map of campus that details club events, special speakers, 
-          or hiring events for students to use.
+            <br />{"*/"}
           </Typography>
-          {"}"}
+          <Accordion defaultExpanded>
+            <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+              <Typography><span className="text-[#dcdcaa] font-bold">Campus Live Map</span>{"("}
+                <span className="text-[#9CDCFE]">Java</span>,
+                <span className="text-[#9CDCFE]"> Java.Swing</span>,
+                <span className="text-[#9CDCFE]"> Java.Awt</span>
+                {")"}{"{"}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className="px-10">
+                Built a live updating map of campus that details club events, special speakers,
+                or hiring events for students to use.
+              </Typography>
+              {"}"}
+            </AccordionDetails>
+          </Accordion>
         </AccordionDetails>
-      </Accordion>
-      </AccordionDetails>
-      <br/>
-      {"}"}
+        <br />
+        {"}"}
       </Accordion>
     </div>
   );

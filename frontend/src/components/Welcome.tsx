@@ -7,10 +7,11 @@ const Welcome: FC = () => (
             <TypeAnimation 
               sequence={[
                 "> Hello, my name is Yatin Kukreja", 1000,
-                "> Hi, I'm Yatin", 1000, 
-                "> Hi, I'm Yatin\n> I'm a CS student at Purdue University", 2000,
+                "> Hi, I'm Yatin\n> ", 1000, 
+                "> Hi, I'm Yatin\n> I'm a CS student at Purdue University\n> ", 2000,
                 "> Hi, I'm Yatin\n> I'm a CS student at Purdue University\n> I enjoy solving puzzles and building cool products.", 1000, 
-                "> Hi, I'm Yatin\n> I'm a CS student at Purdue University\n> I enjoy solving puzzles and building cool products. When I'm not coding I like to play chess, play poker, and swim.\n> ",
+                "> Hi, I'm Yatin\n> I'm a CS student at Purdue University\n> I enjoy solving puzzles and building cool products. When I'm not coding I like to play chess, listen to music, and swim.\n> ",
+                1000, "> Hi, I'm Yatin\n> I'm a CS student at Purdue University\n> I enjoy solving puzzles and building cool products. When I'm not coding I like to play chess, listen to music, and swim.\n> I also love to connect with and learn from people! Feel free to reach out, I'm always happy to have a chat or make new friends!\n> "
               ]}
               wrapper="span"
               speed={40}
