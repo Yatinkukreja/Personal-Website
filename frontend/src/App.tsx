@@ -15,7 +15,9 @@ import Welcome from './components/Welcome';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Hobbies from './components/Hobbies';
+import Resume from './components/Resume';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 
 function App() {
 
@@ -42,6 +44,7 @@ function App() {
               <Route path="/Projects" Component={Projects} />
               <Route path="/Skills" Component={Skills} />
               <Route path="/Hobbies" Component={Hobbies} />
+              <Route path="/Resume" Component={Resume}/>
      </Routes>
      </div>
      </ThemeProvider>

@@ -1,18 +1,28 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import { useScroll } from './ScrollContext';
 import { Link } from 'react-router-dom';
+import { Button, Drawer, IconButton } from '@mui/material';
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import SideBar from './SideBar';
 
 const Header: FC = () => {
-    const { ProjectsSectionRef, SkillsSectionRef } = useScroll();
-
-    const scrollToSection = (sectionRef: React.RefObject<HTMLDivElement>) => {
-        sectionRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
+    const [open, setOpen] = useState<boolean>(false);
   
     return(
-        <div className="flex justify-between px-8 py-4 sticky top-0 bg-opacity-80 backdrop-blur-sm z-50"
+        <div className="flex justify-between px-8 py-4 sticky top-0 bg-opacity-80 backdrop-blur-sm z-40"
         style={{fontFamily: '"Courier New", Courier, monospace', backgroundColor: "#007ACC", color: "#9CDCFE"}}>
             <div className="space-x-4 flex items-end">
+                <IconButton 
+                // variant="outlined"
+                // color="error"
+                size="medium"
+                sx={{color: "#cccccc", margin: "0px", padding: "opx", background: "#007ACC", '&:hover': {background: "#569CD6"}}} onClick={() => {
+                    setOpen(true);
+                    console.log("pressed");
+                    }}><MenuOutlinedIcon fontSize="inherit"/></IconButton>
+                <Drawer open={open} onClose={() => {setOpen(false)}}>
+                    <SideBar/>
+                </Drawer>
                 <Link to="/">
                 <span className="font-semibold text-4xl" style={{color: "#C586C0"}}>Yatin Kukreja</span>
                 </Link>
