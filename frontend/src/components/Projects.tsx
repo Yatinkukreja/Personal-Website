@@ -73,16 +73,19 @@ const Projects: React.FC = () => {
           </Typography>
           <Accordion defaultExpanded >
             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-              <Typography><span className="text-[#dcdcaa] font-bold">Self Driving Car Simulator</span>{"("}
+              <Typography><span className="text-[#dcdcaa] font-bold">This Website!</span>{"("}
                 <span className="text-[#9CDCFE]">Javascript</span>,
+                <span className="text-[#9CDCFE]"> Typescript</span>,
+                <span className="text-[#9CDCFE]"> React</span>,
+                <span className="text-[#9CDCFE]"> TailwindCSS</span>,
                 <span className="text-[#9CDCFE]"> Html</span>,
-                <span className="text-[#9CDCFE]"> CSS</span>
+                <span className="text-[#9CDCFE]"> CSS</span>,
+                <span className="text-[#9CDCFE]"> Vercel</span>
                 {")"}{"{"}</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography className="px-10">
-                Working on a Self Driving Car Simulator. The car uses a small neural network to steer itself and avoid
-                other cars and the edge of the road. A basic genetic algorithm is used to allow the network to learn.
+                Built and deployed this website from scratch as an exercise in front end development. Constantly working to improve it and touch it up. Let me know if you have any suggestions!
               </Typography>
               {"}"}
             </AccordionDetails>

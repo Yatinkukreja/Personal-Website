@@ -75,7 +75,7 @@ const SideBar: FC = () => {
                             </ListItemButton>
                         </RouterLink>
                     </ListItem>
-                    <ListItem disablePadding >
+                    {/* <ListItem disablePadding >
                         <RouterLink
                             to="/Skills"
                             className="w-full">
@@ -98,7 +98,7 @@ const SideBar: FC = () => {
                                 <ListItemText primary={"Hobbies"} />
                             </ListItemButton>
                         </RouterLink>
-                    </ListItem>
+                    </ListItem> */}
                 </List>
             </Box>
         </div>
