@@ -3,6 +3,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FeedIcon from '@mui/icons-material/Feed';
 import EmailIcon from '@mui/icons-material/Email';
+import BuildIcon from '@mui/icons-material/Build';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import PaletteIcon from '@mui/icons-material/Palette';
 import React, { FC } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -59,8 +62,44 @@ const SideBar: FC = () => {
                             </ListItemButton>
                         </Link>
                     </ListItem>
+                    <Divider />
+                    <ListItem disablePadding >
+                        <RouterLink
+                            to="/Projects"
+                            className="w-full">
+                            <ListItemButton sx={{ '&:hover': { background: "#333333" } }}>
+                                <ListItemIcon>
+                                    <BuildIcon sx={{color: "#cccccc"}}/>
+                                </ListItemIcon>
+                                <ListItemText primary={"Projects"} />
+                            </ListItemButton>
+                        </RouterLink>
+                    </ListItem>
+                    <ListItem disablePadding >
+                        <RouterLink
+                            to="/Skills"
+                            className="w-full">
+                            <ListItemButton sx={{ '&:hover': { background: "#333333" } }}>
+                                <ListItemIcon>
+                                    <LightbulbIcon sx={{color: "#cccccc"}}/>
+                                </ListItemIcon>
+                                <ListItemText primary={"Skills"} />
+                            </ListItemButton>
+                        </RouterLink>
+                    </ListItem>
+                    <ListItem disablePadding >
+                        <RouterLink
+                            to="/Hobbies"
+                            className="w-full">
+                            <ListItemButton sx={{ '&:hover': { background: "#333333" } }}>
+                                <ListItemIcon>
+                                    <PaletteIcon sx={{color: "#cccccc"}}/>
+                                </ListItemIcon>
+                                <ListItemText primary={"Hobbies"} />
+                            </ListItemButton>
+                        </RouterLink>
+                    </ListItem>
                 </List>
-                <Divider />
             </Box>
         </div>
     )
