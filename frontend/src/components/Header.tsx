@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button, Drawer, IconButton } from '@mui/material';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import SideBar from './SideBar';
+import headshot from '../headshot prom.jpg';
 
 const Header: FC = () => {
     const [open, setOpen] = useState<boolean>(false);
@@ -36,9 +37,11 @@ const Header: FC = () => {
                     <span className="font-medium text-xl"> Hobbies </span>
                 </Link> */}
             </div>
-            {/* <div className="flex items-end">
-                <span className="font-medium text-xl"> Contact Me </span>
-            </div> */}
+            {/* <div className="flex items-end"> */}
+                {/* <span className="font-medium text-xl"> Contact Me </span>
+                 */}
+                 {/* <img src={headshot} alt="Headshot" style={{ width: '50px', height: '50px' }}/> */}
+            {/* </div> */}
         </div>
     )
 };
