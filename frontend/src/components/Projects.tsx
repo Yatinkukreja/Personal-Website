@@ -65,10 +65,34 @@ const Projects: React.FC = () => {
         <AccordionSummary>
           Projects {"{"}
         </AccordionSummary>
+
         <AccordionDetails>
-          <Typography className="text-[#6A9955] pl-10" style={{ fontFamily: '"Courier New", Courier, monospace' }}>
+
+        <Typography className="text-[#6A9955] pl-10" style={{ fontFamily: '"Courier New", Courier, monospace' }}>
             {"/*"}<br />
             Completed: In Progress
+            <br />{"*/"}
+          </Typography>
+          <Accordion defaultExpanded >
+            <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+              <Typography><span className="text-[#dcdcaa] font-bold">Git commit message analysis VSCode Extension</span>{"("}
+                <span className="text-[#9CDCFE]">Typescript</span>,
+                <span className="text-[#9CDCFE]"> Git</span>,
+                <span className="text-[#9CDCFE]"> NLP</span>,
+                <span className="text-[#9CDCFE]"> VSCode API</span>
+                {")"}{"{"}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography className="px-10">
+                Currently working on a VSCode extension that analyzes recent git commit messages and returns a sentiment analysis of the messages, as well 
+                as common words used in the messages, among other analytics.
+              </Typography>
+              {"}"}
+            </AccordionDetails>
+          </Accordion>
+          <Typography className="text-[#6A9955] pl-10" style={{ fontFamily: '"Courier New", Courier, monospace' }}>
+            {"/*"}<br />
+            Completed: March 2024
             <br />{"*/"}
           </Typography>
           <Accordion defaultExpanded >
