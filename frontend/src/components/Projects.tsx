@@ -78,7 +78,7 @@ const Projects: React.FC = () => {
               <Typography><span className="text-[#dcdcaa] font-bold">Git commit message analysis VSCode Extension</span>{"("}
                 <span className="text-[#9CDCFE]">Typescript</span>,
                 <span className="text-[#9CDCFE]"> Git</span>,
-                <span className="text-[#9CDCFE]"> NLP</span>,
+                <span className="text-[#9CDCFE]"> VADER sentiment analysis</span>,
                 <span className="text-[#9CDCFE]"> VSCode API</span>
                 {")"}{"{"}</Typography>
             </AccordionSummary>
