@@ -5,10 +5,11 @@ const Resume: FC = () => {
         <div>
       {/* Embedding the PDF within an iframe */}
       {/* <img src="/logo192.png"></img> */}
+      {/*when changing, must update public folder as well */}
       <iframe
-        src="/Resume_Yatin_Kukreja_March_2024.pdf"
+        src="/Resume_Yatin_Kukreja_August_2024.pdf"
         style={{ width: '100%', height: '87vh'}}
-        frameBorder="0"
+        title={"Resume"}
       >
         This browser does not support PDFs. Please download the PDF to view it: <a href="/resume.pdf">Download PDF</a>.
       </iframe>
