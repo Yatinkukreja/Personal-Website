@@ -9,7 +9,7 @@ const Resume: FC = () => {
       {/*Assuming resume is in downloads folder: */}
       {/*cp C:\Users\Yatin\Downloads\{RESUME_NAME}.pdf C:\Users\Yatin\OneDrive\Documents\GitHub\Personal-Website\frontend\public */}
       <iframe
-        src="/Resume_Yatin_Kukreja_August_2024.pdf"
+        src="/main.pdf"
         style={{ width: '100%', height: '87vh'}}
         title={"Resume"}
       >
